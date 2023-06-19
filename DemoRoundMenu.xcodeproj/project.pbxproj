@@ -13,10 +13,12 @@
 		6130A00A2A3451C6008715A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6130A0082A3451C6008715A7 /* Main.storyboard */; };
 		6130A00C2A3451C7008715A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6130A00B2A3451C7008715A7 /* Assets.xcassets */; };
 		6130A00F2A3451C7008715A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6130A00D2A3451C7008715A7 /* LaunchScreen.storyboard */; };
+		61314D952A3B20A8007F10CF /* RoundView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 61314D942A3B20A8007F10CF /* RoundView.xib */; };
+		61314D972A3B213F007F10CF /* RoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61314D962A3B213F007F10CF /* RoundView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		61309FFF2A3451C6008715A7 /* 3DTour.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 3DTour.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		61309FFF2A3451C6008715A7 /* DemoRoundMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoRoundMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6130A0022A3451C6008715A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6130A0042A3451C6008715A7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		6130A0062A3451C6008715A7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +26,9 @@
 		6130A00B2A3451C7008715A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6130A00E2A3451C7008715A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6130A0102A3451C7008715A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6130A0172A345368008715A7 /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
+		61314D942A3B20A8007F10CF /* RoundView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RoundView.xib; sourceTree = "<group>"; };
+		61314D962A3B213F007F10CF /* RoundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,39 +45,50 @@
 		61309FF62A3451C6008715A7 = {
 			isa = PBXGroup;
 			children = (
-				6130A0012A3451C6008715A7 /* 3DTour */,
+				6130A0012A3451C6008715A7 /* DemoRoundMenu */,
 				6130A0002A3451C6008715A7 /* Products */,
+				6130A0162A345367008715A7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		6130A0002A3451C6008715A7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				61309FFF2A3451C6008715A7 /* 3DTour.app */,
+				61309FFF2A3451C6008715A7 /* DemoRoundMenu.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		6130A0012A3451C6008715A7 /* 3DTour */ = {
+		6130A0012A3451C6008715A7 /* DemoRoundMenu */ = {
 			isa = PBXGroup;
 			children = (
 				6130A0022A3451C6008715A7 /* AppDelegate.swift */,
 				6130A0042A3451C6008715A7 /* SceneDelegate.swift */,
 				6130A0062A3451C6008715A7 /* ViewController.swift */,
 				6130A0082A3451C6008715A7 /* Main.storyboard */,
+				61314D942A3B20A8007F10CF /* RoundView.xib */,
+				61314D962A3B213F007F10CF /* RoundView.swift */,
 				6130A00B2A3451C7008715A7 /* Assets.xcassets */,
 				6130A00D2A3451C7008715A7 /* LaunchScreen.storyboard */,
 				6130A0102A3451C7008715A7 /* Info.plist */,
 			);
-			path = 3DTour;
+			path = DemoRoundMenu;
+			sourceTree = "<group>";
+		};
+		6130A0162A345367008715A7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6130A0172A345368008715A7 /* Metal.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		61309FFE2A3451C6008715A7 /* 3DTour */ = {
+		61309FFE2A3451C6008715A7 /* DemoRoundMenu */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6130A0132A3451C7008715A7 /* Build configuration list for PBXNativeTarget "3DTour" */;
+			buildConfigurationList = 6130A0132A3451C7008715A7 /* Build configuration list for PBXNativeTarget "DemoRoundMenu" */;
 			buildPhases = (
 				61309FFB2A3451C6008715A7 /* Sources */,
 				61309FFC2A3451C6008715A7 /* Frameworks */,
@@ -82,9 +98,9 @@
 			);
 			dependencies = (
 			);
-			name = 3DTour;
+			name = DemoRoundMenu;
 			productName = 3DTour;
-			productReference = 61309FFF2A3451C6008715A7 /* 3DTour.app */;
+			productReference = 61309FFF2A3451C6008715A7 /* DemoRoundMenu.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +118,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 61309FFA2A3451C6008715A7 /* Build configuration list for PBXProject "3DTour" */;
+			buildConfigurationList = 61309FFA2A3451C6008715A7 /* Build configuration list for PBXProject "DemoRoundMenu" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,7 +131,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				61309FFE2A3451C6008715A7 /* 3DTour */,
+				61309FFE2A3451C6008715A7 /* DemoRoundMenu */,
 			);
 		};
 /* End PBXProject section */
@@ -126,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6130A00F2A3451C7008715A7 /* LaunchScreen.storyboard in Resources */,
+				61314D952A3B20A8007F10CF /* RoundView.xib in Resources */,
 				6130A00C2A3451C7008715A7 /* Assets.xcassets in Resources */,
 				6130A00A2A3451C6008715A7 /* Main.storyboard in Resources */,
 			);
@@ -139,6 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6130A0072A3451C6008715A7 /* ViewController.swift in Sources */,
+				61314D972A3B213F007F10CF /* RoundView.swift in Sources */,
 				6130A0032A3451C6008715A7 /* AppDelegate.swift in Sources */,
 				6130A0052A3451C6008715A7 /* SceneDelegate.swift in Sources */,
 			);
@@ -289,7 +307,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = W92G298WV6;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = 3DTour/Info.plist;
+				INFOPLIST_FILE = DemoRoundMenu/Info.plist;
+				INFOPLIST_KEY_MetalCaptureEnabled = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -317,7 +336,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = W92G298WV6;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = 3DTour/Info.plist;
+				INFOPLIST_FILE = DemoRoundMenu/Info.plist;
+				INFOPLIST_KEY_MetalCaptureEnabled = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -339,7 +359,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		61309FFA2A3451C6008715A7 /* Build configuration list for PBXProject "3DTour" */ = {
+		61309FFA2A3451C6008715A7 /* Build configuration list for PBXProject "DemoRoundMenu" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6130A0112A3451C7008715A7 /* Debug */,
@@ -348,7 +368,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6130A0132A3451C7008715A7 /* Build configuration list for PBXNativeTarget "3DTour" */ = {
+		6130A0132A3451C7008715A7 /* Build configuration list for PBXNativeTarget "DemoRoundMenu" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6130A0142A3451C7008715A7 /* Debug */,
